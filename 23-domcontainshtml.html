@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: rgba(100, 220, 79, 0.543);
+        }
+    </style>
+</head>
+<body>
+    <div id="test" class="">
+        <h2>heading</h2>
+        <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae nostrum iste, nobis maiores tenetur, facilis aperiam atque minima laboriosam possimus at architecto illum totam, nemo libero esse. Ad tempore magni delectus, deleniti quaerat distinctio libero eos labore nobis et at quasi ab, minus nisi, officiis perferendis? Minima, iusto ullam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perspiciatis. Maiores, totam quibusdam. Expedita, voluptas ea tempora, beatae est quaerat deserunt eligendi mollitia consectetur eveniet quidem assumenda dolores officiis sed, aut corrupti? Magni at facere necessitatibus corporis, sit porro asperiores illum provident, earum quibusdam impedit id corrupti. Neque voluptate nesciunt hic omnis, itaque quam eaque enim ut voluptatum fugiat molestias amet quia, doloribus culpa, unde architecto nemo vel cupiditate labore! Modi aperiam totam mollitia numquam in earum ipsa ducimus debitis excepturi sequi quis, temporibus quas eius, at sapiente. Nemo, voluptates laboriosam iusto aut corporis facilis cum eum vero placeat consequatur, fuga rerum dolorem reiciendis, dolor officiis sunt! Sunt eveniet, alias labore mollitia iusto ex odio ea similique quos eligendi sequi!</p>
+    </div>
+    <script>
+        var parentElement = document.getElementById("test");
+        var target = document.getElementById("abc");
+
+        var find = parentElement.contains(target);
+
+        console.log(find);
+
+        // hasAttribute()
+        target = document.getElementById("test");
+        find = target.hasAttribute("class");
+        console.log(find);
+
+        // hasChildNodes()
+        find  = target.hasChildNodes();
+        console.log(find);
+
+    </script>
+</body>
+</html>

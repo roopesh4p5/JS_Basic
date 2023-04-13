@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USING SWITCH CASE </title>
+
+</head>
+<body>
+
+    <h1 id="a">Arithematic operation using  switch case parsing and inner text</h1>
+    <input type="text" id="n1" value="">
+    <input type="text" id="n2" value="">
+    <input type="text" id="n3" value="">
+       
+    
+    <button id="button" onclick="result()">click me</button>
+    <p id="output"></p>
+    <output id="output"></output>
+    
+</form>
+    <script>
+
+        const a=document.getElementById("n1");
+        const b=document.getElementById("n2");
+        const op=document.getElementById("n3");
+
+        function result(){
+
+
+            //    document.getElementById("output")
+               switch (parseInt(op.value)) {
+        
+                   case 1:
+                    
+              document.getElementById("output").innerHTML=parseInt(a.value)+parseInt(b.value);
+                break;
+            case 2:
+              document.getElementById("output").innerHTML=parseInt(a.value)-parseInt(b.value);
+                
+                break;
+            case 3:
+              document.getElementById("output").innerHTML=parseInt(a.value)*parseInt(b.value);
+                
+                break;
+            case 4:
+            document.getElementById("output").innerHTML=parseInt(a.value)/parseInt(b.value);
+            
+                break;
+            case 5:
+              document.getElementById("output").innerHTML=parseInt(a.value)%parseInt(b.value);
+                
+                break;
+            case 6:
+              document.getElementById("output").innerHTML=parseInt(a.value)**parseInt(b.value);
+                
+                break;
+            default:
+                document.write("invalid input")
+             }
+            
+        }
+        document.write("<br>choose the operation to be performed<br>");
+        document.write("1.Addition<br>");
+        document.write("2.subraction<br>");
+        document.write("3.multiplication<br>");
+        document.write("4.division<br>");
+        document.write("5.modulus<br>");
+        document.write("6.exponent<br>");
+       
+             
+            
+    </script>
+    
+
+    <style>
+
+
+
+    </style>
+</body>
+</html>
